@@ -16,6 +16,22 @@ def reward_function(params):
         "waypoints": [[float, float], … ], # list of [x,y] as milestones along the track center
         "closest_waypoints": [int, int]    # indices of the two nearest waypoints.
     }
+    
+    Speed : 5m/s
+    Steering angle : 30
+    Steering angle granularity : 7
+    Speed granularity : 2
+    
+    HyperParameter Value{
+        Gradient descent batch size :   128
+        Entropy :   0.01
+        Discount factor :	0.999
+        Loss type   :	Huber
+        Learning rate   :	0.0003
+        Number of experience episodes between each policy-updating iteration    :	40
+        Number of epochs    :	10
+    }
+    
     '''
     ###############
     ### Imports ###
